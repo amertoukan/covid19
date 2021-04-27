@@ -5,7 +5,7 @@ export default class DropDown extends Component {
     constructor(props){ 
         super(props); 
         this.state={ 
-            country: "All Countries",
+            country: "Change Country",
             overall: null,
             active: null,
             recovered: null,
@@ -20,9 +20,8 @@ export default class DropDown extends Component {
         return (
             <Dropdown style={styles.dropdown}
             drop="right">
-                <Dropdown.Toggle>{//style = {styles.ddToggle}>
-        }
-                    Change Country
+                <Dropdown.Toggle>
+                    {this.state.country}
                 </Dropdown.Toggle>
                 <Dropdown.Menu> {//style={styles.ddMenu}>
     }
